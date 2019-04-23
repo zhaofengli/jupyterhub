@@ -21,7 +21,7 @@
 {% else %}
 <form action="{{login_url}}?next={{next}}" method="post" role="form">
   <div class="auth-form-header">
-    Sign in
+    Sign in with ICS Account
   </div>
   <div class='auth-form-body'>
 
@@ -63,6 +63,9 @@
       value='Sign In'
       tabindex="3"
     />
+  </div>
+  <div class="ics-login-footer">
+    This is a beta release of ICS JupyterHub. Please check <a href="https://swiki.ics.uci.edu/doku.php/virtual_environments:jupyterlab">wiki</a> for updates. Send questions and trouble reports to <a href="mailto:helpdesk@ics.uci.edu">helpdesk@ics.uci.edu</a>.
   </div>
 </form>
 {% endif %}
